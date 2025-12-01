@@ -1,0 +1,35 @@
+<!-- 本代码通过cdn调用vue-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>{{ message }}</h1>
+		<button @click="clickme">clickme</button>
+	</div>
+	<script>
+		const app = Vue.createApp({
+			data(){
+				return{
+					message:'hello world'
+				}
+			},
+			methods:{
+				clickme(){
+					console.log('button clicked');
+					this.message = 'button clicked';
+				}
+			}
+		})
+		app.mount('#app')
+	</script>
+
+</body>
+
+</html>
