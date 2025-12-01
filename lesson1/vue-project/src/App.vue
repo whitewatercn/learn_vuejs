@@ -1,5 +1,16 @@
+<!-- 创建一个api？-->
+<script>
+export default{
+  data(){
+    return{
+      name:"Jack Chen"
+    }
+  }
+}
+</script>
+
 <template>
-  <h1>Learn Vue from here</h1>
+  <h1>{{name}}</h1>
 </template>
 
 <style scoped>
