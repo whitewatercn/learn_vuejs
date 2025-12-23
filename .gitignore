@@ -1,2 +1,5 @@
 # 没用文件
 DS.Store
+
+# 配置文件
+.vscode/
