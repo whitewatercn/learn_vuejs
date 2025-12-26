@@ -4,7 +4,8 @@
 <script setup>
   import {ref} from 'vue'
   const name = ref('doctor')
-  import Header from './Header.vue'
+  // 项目复杂以后，用相对路径.就不合适了，可以用别名@，可以在vite.config.js设置@代表src目录
+  import Header from '@/components/Header.vue'
 </script>
 
 
@@ -15,7 +16,7 @@
   <main>
     <h1>hello, {{ name }}</h1>
     <p>let's learn vuejs</p>
-  </main> 
+  </main>  97 
 
   <footer>
     <p>&copy; 2025 beginner
@@ -42,5 +43,4 @@
 <!-- 
 任务
 1.把main和footer也拆分成单独的组件，并在App.vue中导入使用
-2.安装vueinit插件 https://forum.beginner.center/t/topic/2546
 -->
