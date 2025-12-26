@@ -4,7 +4,8 @@
 <script setup>
   import {ref} from 'vue'
   const name = ref('doctor')
-  const emoji = ref('😊')
+  const emoji = ref('👋')
+  const year = ref('2020')
 </script>
 
 
@@ -20,7 +21,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 beginner
+    <p>&copy; {{ year }} beginner
     </p>
   </footer>
 </template>
@@ -40,6 +41,7 @@
 
   footer p{
     font-size:0.8rem;
+    color: red;
   }
 </style>
 

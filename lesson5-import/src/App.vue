@@ -16,7 +16,7 @@
   <main>
     <h1>hello, {{ name }}</h1>
     <p>let's learn vuejs</p>
-  </main>  97 
+  </main>  
 
   <footer>
     <p>&copy; 2025 beginner

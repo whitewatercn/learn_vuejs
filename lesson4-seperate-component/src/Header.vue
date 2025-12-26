@@ -1,6 +1,6 @@
 <script setup>
 	import { ref } from 'vue'
-	const emoji = ref('😊')
+	const emoji = ref('👌')
 
 
 </script>
