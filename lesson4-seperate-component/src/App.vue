@@ -4,15 +4,13 @@
 <script setup>
   import {ref} from 'vue'
   const name = ref('doctor')
-  const emoji = ref('😊')
+  import Header from './Header.vue'
 </script>
 
 
-<!-- html里的body放在了Vue里的template -->
 <template>
-  <header>
-    <span>{{ emoji }}</span>
-  </header>
+  <!-- 改为使用从Header.vue导入的Header组件 -->
+  <Header/>
 
   <main>
     <h1>hello, {{ name }}</h1>
@@ -27,9 +25,6 @@
 
 <!-- style用来设置样式 -->
 <style scoped>
-  header span{
-    font-size: 3rem;
-  }
   main h1{
     display:block;
   }
@@ -40,12 +35,6 @@
 
   footer p{
     font-size:0.8rem;
+    color:red;
   }
 </style>
-
-
-<!--  
-作业
-1.把copyright改成变量，可以在script里赋值，并且能正确渲染出来
-2.把footer改成红色
-  -->
