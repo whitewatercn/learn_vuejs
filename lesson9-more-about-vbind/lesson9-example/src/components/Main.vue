@@ -1,7 +1,8 @@
 <script setup>
 	import { ref } from 'vue'
 	const quote = ref('First, solve the problem. Then, write the code.')
-	const author = ref('John Johnson')
+	const author = ref('doggie')
+    const href = ref('https://forum.beginner.center/u/doggie/')
     // 设置按钮禁用状态的变量
     const isButtonDisabled = ref(true)
 </script>
@@ -10,11 +11,23 @@
   <main>
       <section>
           <p>{{ quote }}</p>
-          <span>{{ author }}</span>
+        <!-- v-bind如果传递的值和它的名称相同，还可以简化成直接使用这个值 -->
+          <a target="_blank" :href><span>{{ author }}</span></a>
       </section>
       <section id = 'buttons'>
         <!-- 给按钮绑定禁用状态 -->
-        <button v-bind:disabled="isButtonDisabled">Share Me!</button>
+        <!-- <button v-bind:disabled="isButtonDisabled">Share Me!</button> -->
+    
+
+        <!-- 
+        v-bind:disabled="isButtonDisabled"
+        可以简写成
+        :disabled="isButtonDisabled"
+         -->
+        <button :disabled="isButtonDisabled">Share Me!</button>
+
+
+
         <button>Another!</button>
       </section>
   </main>
