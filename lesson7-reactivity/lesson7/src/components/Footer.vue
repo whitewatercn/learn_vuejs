@@ -1,11 +1,13 @@
 <script setup>
 	import { ref } from 'vue';
-	const creator = ref('Professor Pickle');
+	const creator = ref('王白水');
 	const year = ref(2025);
 </script>
 
 <template>
   <footer>
+      <!-- Created by <span> 王白水 </span> &copy; {{ year }} -->
+
       Created by <span>{{ creator }}</span> &copy; {{ year }}
   </footer>
 </template>

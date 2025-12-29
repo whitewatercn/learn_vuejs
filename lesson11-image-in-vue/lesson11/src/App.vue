@@ -1,19 +1,19 @@
 <script setup>
-  import logo from '@/assets/logo.svg';
+  import logo222 from '@/assets/logo.svg';
 </script>
 
 <template>
   <section>
-    <img src = '/favicon.ico' alt="Vue logo"/>
-    <img src = '/logo.svg' alt="Vue logo"/>
+    <!-- <img src = '/favicon.ico' alt="Vue logo"/> -->
+    <!-- <img src = '/logo.svg' alt="Vue logo"/> -->
   </section>
 
   <section>
-    <img src = '@/assets/logo.svg' alt="Vue logo"/>
+    <!-- <img src = '@/assets/logo.svg' alt="Vue logo"/> -->
   </section>
   
   <section>
-    <img v-bind:src="logo" alt = "Vue logo"/>
+    <img v-bind:src="logo222" alt = "Vue logo"/>
   </section>
 </template>
 

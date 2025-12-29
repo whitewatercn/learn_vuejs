@@ -13,8 +13,9 @@
     v-bind:属性名="变量名"
     
     -->
-     
-      Created by <a v-bind:href="href"><span>{{ creator }}</span></a> &copy; {{ year }}
+      Created by <a :href><span>{{ creator }}</span></a> &copy; {{ year }}
+      <!-- Created by <a :href="href"><span>{{ creator }}</span></a> &copy; {{ year }} -->
+      <!-- Created by <a v-bind:href="href"><span>{{ creator }}</span></a> &copy; {{ year }} -->
       <!-- Created by <a href="{{href}}"><span>{{ creator }}</span></a> &copy; {{ year }} -->
 
   </footer>
